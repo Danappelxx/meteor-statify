@@ -2,7 +2,7 @@
 For turning csr (client side rendered) meteor.js websites into static webpages.
 
 # Prerequisites
-It would be prefered for your website to have as little client-side code as possible. You can (obviously) insert the javascript manually afterwards, any javascript code that the website would trigger upon load (animations, event listeners, etc.) won't work out of the box.
+It would be prefered for your website to have as little client-side code as possible. You can (obviously) insert the javascript manually afterwards, but any javascript code that the website would trigger upon load (animations, event listeners, etc.) won't work out of the box.
 
 You need [Phantomjs](http://phantomjs.org) for this to work. It was tested with 2.0.0 on Mac OSX Yosemite; if you have a different version of Phantomjs or a different OS, it may not work for you.
 
