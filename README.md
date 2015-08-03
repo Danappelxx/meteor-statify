@@ -4,7 +4,7 @@ For turning csr (client side rendered) meteor.js websites into static webpages.
 # Prerequisites
 It would be prefered for your website to have as little client-side code as possible. You can (obviously) insert the javascript manually afterwards, but any javascript code that the website would trigger upon load (animations, event listeners, etc.) won't work out of the box.
 
-You need [Phantomjs](http://phantomjs.org) for this to work. It was tested with 2.0.0 on Mac OSX Yosemite; if you have a different version of Phantomjs or a different OS, it may not work for you.
+You need [Phantomjs](http://phantomjs.org) for this to work. It was tested with Phantomjs v2.0.0 on Mac OSX Yosemite; if you have a different version of Phantomjs or use a different OS, I have no guarantee that it will work.
 
 # Use
 
@@ -18,14 +18,14 @@ Afterwards, execute the script with the following command:
 phantomjs statify.js '<website url>'
 ```
 
-The script will (hopefully) log a bunch of success statements. In the end the directory structure will look at such:
+The script will (hopefully) log a bunch of success statements. In the end the directory structure will be as such:
 .
 |__ result
 |   |__ index.html
 |   |__ style.css
 |__ statify.js
 
-Then, upon opening index.html, you should see a (slightly more basic) version of your original meteor website.
+Then, upon opening index.html, you should see a (slightly more basic) version of your original meteor website. You can then edit the index.html by hand and paste in any javascript that you actually wanted.
 
 # Known Issues
 * ssl (https) urls don't work. This seems to be an issue with Phantomjs itself.
