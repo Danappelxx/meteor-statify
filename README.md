@@ -19,11 +19,14 @@ phantomjs statify.js '<website url>'
 ```
 
 The script will (hopefully) log a bunch of success statements. In the end the directory structure will be as such:
+
+```
 .
 |__ result
 |   |__ index.html
 |   |__ style.css
 |__ statify.js
+```
 
 Then, upon opening index.html, you should see a (slightly more basic) version of your original meteor website. You can then edit the index.html by hand and paste in any javascript that you actually wanted.
 
